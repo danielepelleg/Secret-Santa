@@ -1,5 +1,6 @@
 node_modules/**/*
 .expo/*
+.expo-shared/*
 npm-debug.*
 *.jks
 *.p8
@@ -18,5 +19,6 @@ web-build/
 google-services.json
 app.json
 
-# LOG
-.log
+# yarn
+yarn.lock
+*.log
