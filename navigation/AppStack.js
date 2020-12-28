@@ -13,6 +13,7 @@ import SocialButton from "../components/SocialButton";
 
 import HomeScreen from "../screens/HomeScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import AddGroupScreen from "../screens/AddGroupScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -48,8 +49,9 @@ const AppStack = () => {
       headerMode="none"
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
-      <Drawer.Screen name="Home" component={HomeScreen} />
-      <Drawer.Screen name="Profile Screen" component={ProfileScreen} />
+      <Drawer.Screen name="HOME" component={HomeScreen} />
+      <Drawer.Screen name="PROFILE" component={ProfileScreen} />
+      <Drawer.Screen name="CREATE GROUP" component={AddGroupScreen} />
       {/*<Drawer.Screen name="Join Group" component={Home} />
         <Drawer.Screen name="My Secrets" component={Home} />*/}
     </Drawer.Navigator>
